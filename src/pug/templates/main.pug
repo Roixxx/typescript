@@ -1,0 +1,25 @@
+include ../mixins/icon
+
+include ../../components/header/header
+include ../../components/footer/footer
+
+
+block variables
+
+doctype html
+html(lang='ru')
+	head
+		title #{title}
+		//include ../utils/metas
+		//include ../utils/links
+
+
+	body
+		.page-wrapper
+			+header
+
+			block content
+
+			+footer
+
+
