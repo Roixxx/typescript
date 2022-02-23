@@ -12,6 +12,7 @@ const time: Date = new Date();
 
 // Array
 const colors: string[] = ['red'];
+const nums: number[] = [1, 2];
 
 // Class
 class Car {
@@ -26,4 +27,26 @@ const point: { x: number; y: number; } = {
 	y: 20,
 }
 
-console.log(oranges);
+// функция
+
+function sum(a: number, b: number): number {
+	return a + b;
+}
+
+function error(): never {
+	throw Error('err');
+}
+
+//деструктуризайия в функции
+
+const whether = {
+	today: 'good',
+	temp: 13
+}
+
+function logWhether({today, temp}: {today: string, temp: number}) {
+	console.log(today);
+	console.log(temp);
+}
+logWhether(whether)
+
