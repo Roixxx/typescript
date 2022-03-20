@@ -13,6 +13,7 @@ const time: Date = new Date();
 // Array
 const colors: string[] = ['red'];
 const nums: number[] = [1, 2];
+const numsColors: (number | string)[] = [1, 2, 'red'];
 
 // Class
 class Car {
@@ -50,3 +51,23 @@ function logWhether({today, temp}: {today: string, temp: number}) {
 }
 logWhether(whether)
 
+// Tuple type + alias
+
+type Drink = [string, boolean, number];
+const cola: Drink = ['black', true, 40];
+
+
+// Оbj interface
+
+interface IUser {
+	id: number;
+	name: string;
+}
+function buildUser(userId: number, userName: string): IUser {
+
+	return { id: userId, name: userName };
+}
+
+let newUser = buildUser(2, "Bill");
+console.log("id: ", newUser.id);
+console.log("name: ", newUser.name);
