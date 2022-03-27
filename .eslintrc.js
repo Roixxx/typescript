@@ -24,6 +24,14 @@ module.exports = {
 		"no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
 		"no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
 		"linebreak-style": ["error", "windows"],
+		"no-tabs": 0,
+		"@typescript-eslint/indent": 0,
+		"indent": 0,
+
+		"@typescript-eslint/no-unused-vars": 0,
+		"no-unused-vars": 0,
+		"import/extensions": 0,
+		"import/no-unresolved": 0,
 	},
   settings: {
     'import/resolver': {

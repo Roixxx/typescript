@@ -71,3 +71,4 @@ function buildUser(userId: number, userName: string): IUser {
 let newUser = buildUser(2, "Bill");
 console.log("id: ", newUser.id);
 console.log("name: ", newUser.name);
+

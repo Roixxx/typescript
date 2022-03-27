@@ -59,6 +59,9 @@
 		"webpack-dev-server": "^4.0.0-rc.0"
 	},
 	"dependencies": {
+		"@faker-js/faker": "^6.0.0",
+		"@types/google-maps": "^3.2.3",
+		"@types/google.maps": "^3.48.3",
 		"axios": "^0.26.0",
 		"sanitize.css": "^12.0.1"
 	}
